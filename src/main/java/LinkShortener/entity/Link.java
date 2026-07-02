@@ -20,7 +20,7 @@ public class Link {
     public Link() {
     }
 
-    public Link(Long id, String originalLink, String shortCode, int counter, LocalDateTime createdAt, LocalDateTime expiresAt) {
+    public Link(Long id, String originalUrl, String shortCode, int counter, LocalDateTime createdAt, LocalDateTime expiresAt) {
         this.id = id;
         this.originalUrl = originalUrl;
         this.shortCode = shortCode;

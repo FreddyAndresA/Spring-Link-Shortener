@@ -10,6 +10,8 @@ import java.util.Optional;
 @Repository
 public interface LinkRepository extends JpaRepository<Link, Long> {
 
+    Optional<Link> findByOriginalUrl(String url);
+
     Optional<Link> findByShortCode(String shortCode);
 
     int deleteByExpiresAtBefore(LocalDateTime dateTime);
